@@ -43,9 +43,6 @@
 .gap{
 margin:5px;
 }
-.input_box{
-    padding: 5px;
-}
 
 .btn{
    
@@ -83,4 +80,30 @@ margin:5px;
 .btn_Link{
     color: #c4e2f4;
     font-size: 12px;
+}
+
+.input-icons i {
+    position: fixed;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+.icon {
+    padding: 5px;
+    min-width: 10px;
+    background-color: #39cbd5;
+}
+
+.style{
+    max-width:400px;
+    margin:auto
+}
+
+.keyset{
+    display: flex;
+    flex-direction: row;  
 }

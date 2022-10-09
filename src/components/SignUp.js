@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import UserPool from "../UserPools";
 import "./LogSing.css";
 
-
 const SignUp = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -43,44 +42,62 @@ const SignUp = () => {
   return (
     <div className="App_Main">
       <div>
-      <div className="heading">SIGNUP FORM</div>
-      <form className="formlog" onSubmit={onSubmit}>
-        <label className="Labels" htmlFor="email">
-          Email
-        </label>
-        <input
-        className="input_box"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          placeholder="enter email"
-          required
-        ></input>
+      <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <div className="heading">SIGNUP FORM</div>
+        <form className="formlog" onSubmit={onSubmit}>
+          <label className="Labels" htmlFor="email">
+            Email
+          </label>
 
-        <div className="gap"></div>
-        <label className="Labels" htmlFor="password">
-          Password
-        </label>
-        <input
-        className="input_box"
-          type="password"
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-          placeholder="enter Password"
-          required
-        ></input>
-        <div>
-          <button className="btn" type="submit">
-            Signup
-          </button>
+          <div className="keyset">
+           
+            <i class="fa fa-user icon"></i>
+
+              <input
+                class="input-field"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                placeholder="ENTER EMAIL"
+                required
+              ></input>
+           
+          </div>
+          <div className="gap"></div>
+          <label className="Labels" htmlFor="password">
+            Password
+          </label>
+
+          <div className="keyset">
+            
+        <i class="fa fa-key icon"></i>
+        
+        
+          <input
+            class="input-field"
+            type="password"
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+            placeholder="ENTER PASSWORD"
+          
+            required
+          ></input>
+          </div>
+          <div>
+          
+            <button className="btn" type="submit">
+              Signup
+            </button>
+          </div>
+        </form>
+        <div className="btm_txt">
+          Back to{" "}
+          <Link to="/Login" className="btn_Link">
+            login
+          </Link>{" "}
+          page
         </div>
-      </form>
-      <div className="btm_txt">
-        Back to{" "}
-        <Link to="/Login" className="btn_Link">
-          login
-        </Link>{" "}
-        page
-      </div>
       </div>
     </div>
   );
