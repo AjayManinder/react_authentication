@@ -1,0 +1,86 @@
+.App_Main {
+    background-image:url("https://wallpaperaccess.com/full/4893732.jpg");
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    
+  }
+.formlog{
+   border: 3px solid beige;
+   padding: 2em 3em;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+  
+}
+
+
+
+.heading{
+    font-size: 30px;
+    color:rgb(64, 56, 56);
+    text-align: center;
+    font-weight: 600;
+    /* text-decoration:underline; */
+
+
+    background-color: #39cbd5;
+}
+
+
+
+.Labels{
+    font-size: 30px;
+    color:burlywood;
+    /* font-weight: 500;
+    font-style: italic; */
+   
+}
+.gap{
+margin:5px;
+}
+.input_box{
+    padding: 5px;
+}
+
+.btn{
+   
+    background-color: #4591bd; /* Green */
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;  
+    cursor: pointer;
+   
+}
+
+.btn:hover {
+    background-color:#15517c;
+    transition: 0.4s;
+}
+
+.btn:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #cca4ef;
+    transition: 0.4s;
+}
+.btm_txt{
+    font-size: 15px;
+    margin-top: 8px;
+    color: burlywood;
+    text-align: center;
+}
+.btn_Link{
+    color: #c4e2f4;
+    font-size: 12px;
+}
