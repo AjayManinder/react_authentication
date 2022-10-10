@@ -4,6 +4,7 @@ import { AuthenticationDetails } from "amazon-cognito-identity-js";
 import UserPool from "../UserPools";
 import { useNavigate, Link } from "react-router-dom";
 import "./LogSing.css";
+
 const Login = () => {
   const navigate = useNavigate();
 
@@ -48,7 +49,9 @@ const Login = () => {
   };
 
   return (
+   
     <div className="App_Main">
+      
       <div>
         <link
           rel="stylesheet"
@@ -104,7 +107,9 @@ const Login = () => {
           here to login{" "}
         </div>
       </div>
+      
     </div>
+    
   );
 };
 
